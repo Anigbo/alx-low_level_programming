@@ -12,11 +12,8 @@ int main(void)
 
 	for (i = 0; i < 90; i++)
 	{
-		for ()
-		{
-			putchar((i / 10) + '0');
-			putchar((i % 10) + '0');
-		}
+		putchar((i / 10) + '0');
+		putchar((i % 10) + '0');
 		if (i != 89)
 		{
 			putchar(',');
@@ -24,5 +21,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
