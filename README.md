@@ -1,1 +1,1 @@
-My first c hello_world file
+Debugging in C
