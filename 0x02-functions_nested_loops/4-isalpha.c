@@ -8,8 +8,8 @@
  */
 int _isalpha(int c)
 {
-	if (_isalpha(c) == 0)
-		return (0);
-	else
+	if (c == 'a')
 		return (1);
+	else
+		return (0);
 }
