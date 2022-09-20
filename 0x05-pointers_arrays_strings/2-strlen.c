@@ -4,7 +4,7 @@
  * _strlen - Returns the length of a string
  * @s: String to count
  *
- * Retrun: String length
+ * Return: String length
  */
 int _strlen(char *s)
 {
