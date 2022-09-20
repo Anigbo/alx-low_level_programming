@@ -18,12 +18,12 @@ void rev_string(char *s)
 		c++;
 	}
 
-	for (k = 1; k < b; k++)
+	for (k = 1; k < c; k++)
 	{
 		a++;
 	}
 
-	for (i = 0; i < (b / 2); i++)
+	for (i = 0; i < (c / 2); i++)
 	{
 		aux = s[i];
 		s[i] = *a;
