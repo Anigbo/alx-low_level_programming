@@ -4,7 +4,7 @@ char *_strncat(char *dest, char *src, int n);
 char *_strcpy(char *dest, char *src, int n);
 int _strcmp(char *sl, char *s2);
 void reverse_array(int *a, int n);
-char *string_trouper(char *);
+char *string_troupper(char *);
 char *cap_string(char *);
 char *leet(char *);
 char *rot13(char *);
