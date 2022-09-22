@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * string_troupper - Changes all lowercase letters to uppercase
+ * string_toupper - Changes all lowercase letters to uppercase
  * @p: The string to modify
  *
  * Return: char var
  */
-char *string_troupper(char *p)
+char *string_toupper(char *p)
 {
 	int a = 0;
 
