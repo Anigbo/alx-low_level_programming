@@ -51,13 +51,13 @@ int main(int argc, char *argv[])
 	{
 											dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 											exit(97);
-										}
+	}
 	if (argv[1] == NULL)
 										file1fail(argv[1]);
 	if (argv[2] == NULL)
 										file2fail(argv[2]);
 		
-	file1 = open(argv[1], O_RDONLY);
+       	file1 = open(argv[1], O_RDONLY);
 
 	if (file1 == -1)
 										file1fail(argv[1]);
@@ -71,15 +71,15 @@ int main(int argc, char *argv[])
 										{
 																				file2wr = write(file2, buffer, file1rd);
 																				if (file2wr != file1rd)
-																					file2fail(argv[2]);
-																					file1rd = read(file1, buffer, BUFSIZE);
-																					if (file1rd == -1)
-																														file1fail(argv[1]);
-																			}
+																				file2fail(argv[2]);
+																				file1rd = read(file1, buffer, BUFSIZE);
+																				if (file1rd == -1)
+																				file1fail(argv[1]);
+										}
 										closed = close(file1);
 										if (closed == -1)
 																			closefail(file1);
-											closed = close(file2);
-																			if (closed == -1)
-																				closefail(file2);															return (0);
+										closed = close(file2);
+										if (closed == -1)
+										closefail(file2);															return (0);
 }
