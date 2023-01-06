@@ -1,18 +1,9 @@
 #ifndef HASH_TABLES_H
-
 #define HASH_TABLES_H
 
-
-
 #include <stdio.h>
-
 #include <stdlib.h>
-
 #include <string.h>
-
-
-
-
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -147,7 +138,5 @@ void shash_table_print(const shash_table_t *ht);
 void shash_table_print_rev(const shash_table_t *ht);
 
 void shash_table_delete(shash_table_t *ht);
-
-
 
 #endif
