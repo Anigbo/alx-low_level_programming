@@ -1,20 +1,12 @@
 #include "hash_tables.h"
 
-
-
 /**
+ *  hash_djb2 - Implements the djb2 algorith,
  *
- *  *  hash_djb2 - Implements the djb2 algorith,
+ *  @str: String to be hashed
  *
- *   *
- *
- *    *  @str: String to be hashed
- *
- *     *
- *
- *      *  Return: The hashed string
- *
- *       */
+ *  Return: The hashed string
+ */
 
 
 
