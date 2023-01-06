@@ -3,18 +3,12 @@
 
 
 /**
+ *  hash_table_create - Creates a hash table
  *
- *  *  hash_table_create - Creates a hash table
+ *  @size: Size of the array
  *
- *   *
- *
- *    *  @size: Size of the array
- *
- *     *
- *
- *      *  Return: A pointer to the newly created hash table
- *
- *       */
+ *  Return: A pointer to the newly created hash table
+ */
 
 
 
