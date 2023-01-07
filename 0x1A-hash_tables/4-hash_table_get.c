@@ -1,26 +1,14 @@
 #include "hash_tables.h"
 
-
-
 /**
+ *  hash_table_get - Retrieves a value associated with a key.
  *
- *  *  hash_table_get - Retrieves a value associated with a key.
+ *  @ht: The hash table you want to look into
  *
- *   *
+ *  @key: The value you are lookg for
  *
- *    *  @ht: The hash table you want to look into
- *
- *     *
- *
- *      *  @key: The value you are lookg for
- *
- *       *
- *
- *        *  Return: A pointer to the newly created hash table
- *
- *         */
-
-
+ *  Return: A pointer to the newly created hash table
+ */
 
 char *hash_table_get(const hash_table_t *ht, const char *key)
 

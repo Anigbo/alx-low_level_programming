@@ -1,22 +1,12 @@
 #include "hash_tables.h"
 
-
-
 /**
+ *  hash_table_print - Prints a hash table
  *
- *  *  hash_table_print - Prints a hash table
+ *  @ht: The hash table
  *
- *   *
- *
- *    *  @ht: The hash table
- *
- *     *
- *
- *      *  Return: The key/value pair according to example
- *
- *       */
-
-
+ *  Return: The key/value pair according to example
+ */
 
 void hash_table_print(const hash_table_t *ht)
 

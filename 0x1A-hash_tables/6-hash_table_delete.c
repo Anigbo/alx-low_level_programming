@@ -1,22 +1,12 @@
 #include "hash_tables.h"
 
-
-
 /**
+ *  hash_table_delete - Delete a hash table
  *
- *  *  hash_table_delete - Delete a hash table
+ *  @ht: The hash table
  *
- *   *
- *
- *    *  @ht: The hash table
- *
- *     *
- *
- *      *  Return: Void
- *
- *       */
-
-
+ *  Return: Void
+ */
 
 void hash_table_delete(hash_table_t *ht)
 
