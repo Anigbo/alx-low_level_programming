@@ -1,30 +1,16 @@
-nclude "hash_tables.h"
-
-
+#include "hash_tables.h"
 
 /**
+ *  hash_table_set - Adds an element to the hash table
  *
- *  *  hash_table_set - Adds an element to the hash table
+ *  @ht: The hash table to update
  *
- *   *
+ *  @key: Key to hashtable
  *
- *    *  @ht: The hash table to update
+ *  @value: Value associated with key
  *
- *     *
- *
- *      *  @key: Key to hashtable
- *
- *       *
- *
- *        *  @value: Value associated with key
- *
- *         *
- *
- *          *  Return: A pointer to the newly created hash table
- *
- *           */
-
-
+ *  Return: A pointer to the newly created hash table
+ */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
@@ -117,22 +103,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 
 /**
+ *  hash_table_pair - Allocate memory for entry
  *
- *  *  hash_table_pair - Allocate memory for entry
+ *  @key: Key to hashtable
  *
- *   *
+ *  @value: Value associated with key
  *
- *    *  @key: Key to hashtable
- *
- *     *
- *
- *      *  @value: Value associated with key
- *
- *       *
- *
- *        *  Return: Entry of key/value
- *
- *         */
+ *  Return: Entry of key/value
+ */
 
 hash_node_t *hash_table_pair(const char *key, const char *value)
 
@@ -146,52 +124,26 @@ hash_node_t *hash_table_pair(const char *key, const char *value)
 
 
 
-				if (entry == NULL)
-
-						{
-
-									return (NULL);
-
+if (entry == NULL)
+{
+return (NULL);
 										}
 
+entry->key = strdup(key);
 
+if (entry->key == NULL)
+{
+										free(entry);
+										return (NULL);
+										}
 
-					entry->key = strdup(key);
+entry->value = strdup(value);
 
-
-
-						if (entry->key == NULL)
-
-								{
-
-											free(entry);
-
-													return (NULL);
-
-														}
-
-
-
-							entry->value = strdup(value);
-
-
-
-								if (entry->value == NULL)
-
-										{
-
-													free(entry->key);
-
-															free(entry);
-
-																	return (NULL);
-
-																		}
-
-									entry->next = NULL;
-
-
-
-										return (entry);
-
+if (entry->value == NULL)
+{
+free(entry);
+return (NULL);
+}
+entry->next = NULL;
+return (entry);
 }
